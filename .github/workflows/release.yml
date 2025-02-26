@@ -14,11 +14,6 @@ jobs:
         os: [macos-latest, windows-latest, ubuntu-22.04]
 
     steps:
-      - name: Check out Git repository
-        uses: actions/checkout@v3
-        with:
-          submodules: "recursive"
-
       - name: Install Node.js, NPM and Yarn
         uses: actions/setup-node@v3
         with:
